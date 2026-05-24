@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { ContactForm } from './common/ContactForm';
 
@@ -24,25 +24,25 @@ export default function ContactModal() {
                 ✦ &nbsp; Message Sent &nbsp; ✦
             </div>
 
-            <div className="bg-burgundy border-shadi-gold/20 relative max-h-[90vh] w-full max-w-[500px] overflow-y-auto border p-8 md:p-10 shadow-2xl">
+            <div className="bg-burgundy border-shadi-gold/20 relative max-h-[90vh] w-full max-w-[500px] overflow-y-auto border p-8 shadow-2xl md:p-10">
                 <button
                     onClick={closeMenu}
-                    className="text-shadi-gold hover:text-shadi-gold-light absolute top-6 right-6 text-2xl transition-colors"
+                    className="text-shadi-gold hover:text-shadi-gold-light absolute top-6 right-6 cursor-pointer text-2xl transition-colors"
                 >
                     ✕
                 </button>
-                
+
                 <div className="mb-8">
-                    <h2 className="font-goudy text-shadi-gold text-xl font-semibold tracking-[0.05em] uppercase">
-                        Get Your Ritual Analysis
-                    </h2>
+                    <h2 className="font-goudy text-shadi-gold text-xl font-semibold tracking-[0.05em] uppercase">Get Your Ritual Analysis</h2>
                 </div>
 
-                <ContactForm onSuccess={() => {
-                    setToast(true);
-                    setTimeout(() => setToast(false), 3500);
-                    setTimeout(() => setIsOpen(false), 1000);
-                }} />
+                <ContactForm
+                    onSuccess={() => {
+                        setToast(true);
+                        setTimeout(() => setToast(false), 3500);
+                        setTimeout(() => setIsOpen(false), 1000);
+                    }}
+                />
             </div>
         </div>
     );

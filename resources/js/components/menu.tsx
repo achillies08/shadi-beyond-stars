@@ -19,7 +19,7 @@ export default function Menu({ scrollToCTA }: MenuProps) {
 
     return (
         <nav
-            className={`fixed inset-x-0 top-0 z-[200] flex min-h-fit items-center justify-between px-[5%] py-2 transition-all duration-400 ${scrolled ? 'border-shadi-gold/20 border-b bg-[#1c0a0a]/96 backdrop-blur-md' : ''}`}
+            className={`fixed inset-x-0 top-0 z-[200] flex min-h-fit items-center justify-between px-[5%] py-1 transition-all duration-400 ${scrolled ? 'border-shadi-gold/20 border-b bg-[#1c0a0a]/96 backdrop-blur-md' : ''}`}
         >
             <Head title="Shadi Beyond Stars — Vedic Marriage Alignment">
                 <link rel="shortcut icon" href="/front-assets/fav.png" type="image/x-icon" />

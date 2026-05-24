@@ -13,15 +13,14 @@ export const CTA = ({ onSuccess }: CTAProps) => {
             <CTAParticles />
             <div className="reveal relative z-10">
                 <span className="font-devanagari text-shadi-gold mb-4 block animate-pulse text-[4rem] opacity-22">ॐ</span>
-                <h2 className="text-shadi-cream mb-4 text-[clamp(1.9rem,4.2vw,3.8rem)] leading-none font-normal">
-                    Begin Your <em className="text-shadi-gold-light italic">Karmic</em>
+                <h2 className="text-shadi-cream mb-4 text-[clamp(1.9rem,4.2vw,3.8rem)] leading-[1.1] font-normal">
+                    Begin Your Journey
                     <br />
-                    Alignment Today
+                    <em className="text-shadi-gold-light italic">With Clarity & Understanding</em>
                 </h2>
                 <p className="font-devanagari text-shadi-gold mb-1.8 text-[1rem] opacity-70">आपकी विवाहिक यात्रा का सारथी</p>
-                <p className="text-shadi-cream/55 mx-auto mb-11 max-w-[500px] text-[1.05rem] leading-[1.8]">
-                    Every marriage begins with a question. Let us help you find the answers written in your stars — and then act on them with
-                    precision.
+                <p className="text-shadi-cream/55 mx-auto mb-11 max-w-[600px] text-[1.05rem] leading-[1.8]">
+                    Every marriage begins with hope, questions, and the desire for a peaceful future together. We help you understand what your Kundali reveals and guide you with care, clarity, and tradition.
                 </p>
                 <div className="mx-auto max-w-[560px]">
                     <ContactForm buttonText="Request Your Free Consultation →" onSuccess={onSuccess} />

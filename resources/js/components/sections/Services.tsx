@@ -3,93 +3,70 @@ import gsap from 'gsap';
 import { useRef, useState } from 'react';
 
 const services = {
-// ... existing services ...
     astro: [
         {
             g: '☽',
             t: 'Advanced Kundali Matching',
-            d: 'Deep compatibility beyond guna matching — emotional, financial, karmic, and spiritual alignment of both individuals.',
+            d: 'A meaningful match goes far beyond guna scores alone. Along with emotional compatibility, family dynamics, and long-term harmony, we also study deeper karmic connections through advanced analysis such as Prarabdh Match, D90, and D120 charts to understand the true nature of the relationship.',
         },
         {
             g: '◈',
             t: 'Comprehensive Dosha Analysis',
-            d: 'Identification and assessment of all doshas — Mangal, Kaal Sarp, Pitra, Shani — and their precise impact on your union.',
+            d: 'Every dosha carries a different influence depending on the chart. We carefully examine Mangal, Kaal Sarp, Pitra, Shani, and other planetary conditions to understand their actual impact on married life and whether remedies are truly needed.',
         },
         {
             g: '✦',
             t: 'Vedic Muhurat Selection',
-            d: 'Astrologically precise wedding timing based on both charts, planetary transits, and Panchang — the most auspicious window for your beginning.',
+            d: 'In our traditions, the timing of a marriage has always held importance. Using Panchang, planetary movements, Nakshatra, and both Kundalis, we identify dates and timings that support harmony, stability, and a positive beginning for the couple.',
         },
         {
             g: '❈',
             t: 'Detailed Written Analysis',
-            d: 'A complete written Kundali report with findings, recommendations, and a personalised ritual plan — delivered after your consultation.',
+            d: 'After the consultation, you receive a clear and personalised report with important observations, compatibility insights, and guidance explained in a practical and easy-to-understand manner.',
         },
     ],
-    prewed: [
-        {
-            g: '🔥',
-            t: 'Mangal Dosh Puja',
-            d: 'Complete remedy for Mangal Dosh — performed with full Vedic precision to neutralise the malefic influence of Mars on the union.',
-        },
-        {
-            g: '🪔',
-            t: 'Kaal Sarp Puja',
-            d: 'Ritual to address the Kaal Sarp Yog in the chart — done at the right muhurat with specific mantras for lasting resolution.',
-        },
-        {
-            g: '⬡',
-            t: 'Navgrah Shanti',
-            d: 'Propitiation of all nine planetary forces — a comprehensive shanti ceremony to balance the entire cosmic chart before marriage.',
-        },
-        {
-            g: '◉',
-            t: 'Pitra Dosh Puja',
-            d: 'Resolution of ancestral karmic debt — one of the most often overlooked yet critical rituals before entering a marriage.',
-        },
-    ],
-    wedding: [
+    marriage: [
         {
             g: '✧',
             t: 'Vivah Sanskar Ceremony',
-            d: 'Your complete wedding ceremony — designed entirely around your Kundali and muhurat, performed with authentic Vedic tradition.',
+            d: 'A complete Vedic wedding ceremony designed around your Kundali, muhurat, and family traditions with every ritual performed thoughtfully and with proper guidance.',
         },
         {
             g: '☉',
             t: 'Saptapadi Ritual Design',
-            d: 'The seven sacred vows, designed precisely for the energies of your two charts — meaningful, personalised, and karmically aligned.',
+            d: 'The seven sacred vows hold deep meaning in a marriage. We help personalise the ceremony according to the couple\'s energies, values, and spiritual compatibility.',
         },
         {
             g: '🌿',
             t: 'Full Pandit Coordination',
-            d: 'Our trained pandit team manages every aspect of the ceremony — samagri, timing, mantra — one seamless point of contact.',
+            d: 'From samagri and mantra recitation to ritual timing and ceremony flow, our pandit team manages every detail with care so families can remain fully present in the moment.',
         },
         {
             g: '♾',
             t: 'Wedding Day Alignment Package',
-            d: 'Everything bundled — muhurat, ceremony design, pandit team, samagri, and same-day ritual support for a perfectly aligned day.',
+            d: 'A complete wedding support experience including muhurat guidance, ceremony planning, pandit coordination, samagri, and same-day ritual assistance for a smooth and spiritually aligned celebration.',
         },
     ],
     post: [
         {
             g: '◎',
             t: 'Post-Ritual Aftercare',
-            d: 'Instructions, ongoing remedies, and follow-up consultation — the spiritual work continues after the ceremony concludes.',
+            d: 'Some guidance is needed even after the rituals are complete. We remain available for follow-up support, remedies, and practical guidance as the couple settles into married life.',
         },
         {
             g: '♾',
             t: 'Long-Term Harmony Support',
-            d: 'Periodic check-ins, updated remedies aligned to planetary transits, and subscription guidance for enduring marital wellbeing.',
+            d: 'Marriage changes with time, responsibilities, and life phases. We offer continued guidance during important planetary periods and major transitions to help maintain balance and understanding in the relationship.',
         },
         {
             g: '☽',
-            t: 'NRI Remote Services',
-            d: 'Full consultation, Kundali analysis, and guided ritual execution available remotely for clients anywhere in the world.',
+            t: 'Support For Troubled Marriages',
+            d: 'Not every relationship needs to end. Some simply need deeper understanding. Through careful chart study and thoughtful guidance, we help couples navigate emotional distance, recurring conflict, and difficult phases in marriage.',
         },
         {
             g: '✦',
-            t: 'Annual Transit Guidance',
-            d: 'Yearly planetary transit reviews specific to your married chart — identifying key windows, challenges, and opportunities ahead.',
+            t: 'Subscription Guidance',
+            d: 'Ongoing monthly or quarterly guidance for couples seeking continued spiritual and relationship support through different phases of married life. Includes personalised remedies, transit guidance, important dates, and direct consultation support.',
         },
     ],
 };
@@ -128,19 +105,19 @@ export const Services = ({ scrollToCTA }: ServicesProps) => {
                     What We Offer
                 </div>
                 <h2 className="mb-5.5 text-[clamp(1.9rem,3.6vw,3.2rem)] leading-[1.12] font-normal">
-                    End-to-End <em className="text-shadi-gold-light italic">Marriage Alignment</em>
-                    <br />— Not Just Advice
+                    Thoughtful Guidance For
+                    <br />
+                    <em className="text-shadi-gold-light italic">A New Beginning</em>
                 </h2>
                 <p className="text-shadi-cream/55 max-w-[600px] text-[1.05rem] leading-[1.9] font-light">
-                    Four service pillars, one seamless journey. Every offering is tailored to your Kundali — nothing generic, nothing off-the-shelf.
+                    Three paths of support, shaped around your journey. Every marriage carries its own karma, circumstances, and challenges. That is why we do not believe in fixed remedies or generic advice. Whether it is Kundali analysis, rituals & post-marriage guidance, every step is approached with care, understanding, and respect for your situation.
                 </p>
 
                 <div className="border-shadi-gold/15 mt-12 flex flex-wrap gap-0 border-b">
                     {[
                         { id: 'astro', label: 'Astrology & Analysis' },
-                        { id: 'prewed', label: 'Pre-Wedding Rituals' },
-                        { id: 'wedding', label: 'Wedding Day' },
-                        { id: 'post', label: 'Post-Marriage' },
+                        { id: 'marriage', label: 'Marriage' },
+                        { id: 'post', label: 'Post Marriage' },
                     ].map((tab) => (
                         <button
                             key={tab.id}
@@ -157,7 +134,7 @@ export const Services = ({ scrollToCTA }: ServicesProps) => {
                         <div
                             key={`${activeTab}-${i}`}
                             onClick={scrollToCTA}
-                            className="service-card group bg-burgundy hover:bg-burgundy/80 after:from-shadi-gold/10 will-change-[transform,opacity] relative cursor-pointer overflow-hidden px-7.5 py-9.5 transition-colors duration-500 after:absolute after:inset-x-0 after:bottom-0 after:h-0 after:bg-gradient-to-t after:to-transparent after:transition-[height] after:duration-500 after:content-[''] hover:after:h-full"
+                            className="service-card group bg-burgundy hover:bg-burgundy/80 border border-transparent hover:border-shadi-gold/20 will-change-[transform,opacity] relative cursor-pointer overflow-hidden px-7.5 py-9.5 transition-colors duration-500"
                         >
                             <span className="mb-5.5 block text-2xl opacity-65">{s.g}</span>
                             <div className="text-shadi-gold mb-2 text-[0.52rem] tracking-[0.25em] uppercase opacity-55">

@@ -6,7 +6,7 @@ import { KundaliSection } from '@/components/sections/KundaliSection';
 import { Marquee } from '@/components/sections/Marquee';
 import { Philosophy } from '@/components/sections/Philosophy';
 import { Process } from '@/components/sections/Process';
-import { Rituals } from '@/components/sections/Rituals';
+import { TroubledMarriages } from '@/components/sections/TroubledMarriages';
 import { Services } from '@/components/sections/Services';
 import { WhyUs } from '@/components/sections/WhyUs';
 import MainLayout from '@/layouts/MainLayout';
@@ -48,12 +48,13 @@ export default function Welcome() {
                 <Services scrollToCTA={scrollToCTA} />
 
                 {/* LEAD STRIP 1 */}
-                <div className="reveal from-nightshade via-shadi-gold/6 to-nightshade border-shadi-gold/20 border-y bg-gradient-to-br px-[5%] py-15">
-                    <div className="reveal-stagger mx-auto grid max-w-4xl grid-cols-1 items-center gap-12 lg:grid-cols-2">
+                <div className="reveal bg-nightshade border-shadi-gold/15 border-y px-[5%] py-15">
+                    <div className="reveal-stagger mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 lg:grid-cols-[1.5fr_1fr]">
                         <div className="reveal-item">
-                            <div className="text-shadi-cream mb-2 text-[1.65rem] italic">Not sure where to begin?</div>
-                            <p className="text-shadi-cream/55 text-[0.98rem]">
-                                Share your birth details and we'll guide you to the right service — no pressure, no obligation.
+                            <div className="text-shadi-gold mb-2 text-[0.6rem] tracking-[0.2em] uppercase">India's First Post-Marriage Compatibility Analysis Through Prarabdh Matching</div>
+                            <div className="text-shadi-cream mb-2 text-[1.65rem] italic">Unsure what your situation truly needs?</div>
+                            <p className="text-shadi-cream/55 text-[0.98rem] leading-[1.8]">
+                                Send us your birth details. We'll help you understand the next step with clarity and care.
                             </p>
                         </div>
                         <div className="reveal-item">
@@ -63,7 +64,7 @@ export default function Welcome() {
                 </div>
 
                 <KundaliSection />
-                <Rituals scrollToCTA={scrollToCTA} />
+                <TroubledMarriages scrollToCTA={scrollToCTA} />
                 <Process />
                 <WhyUs />
 

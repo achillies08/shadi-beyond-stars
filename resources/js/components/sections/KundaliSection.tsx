@@ -4,42 +4,47 @@ import { KundaliDetail } from '../canvas/KundaliDetail';
 const kundaliTabs = {
     match: {
         t: 'Kundali Matching',
-        s: 'Ashtakoota & Beyond',
-        d: 'Traditional guna matching covers only 8 points. We analyse 36 — including emotional temperament, financial compatibility, sexual harmony, and deeper spiritual alignment between two souls.',
+        s: 'More Than Just Guna Matching',
+        d: 'Traditional matching focuses on gunas. We study the deeper balance between two individuals including emotional nature, karmic understanding, relationship harmony, and karmic connection.',
         p: [
-            '36-point Ashtakoota analysis',
-            'Emotional & karmic compatibility',
-            'Dashakoota extended compatibility',
-            'Longevity & financial alignment',
+            'Prarabdh Match & karmic compatibility analysis',
+            'Dashakoota, D90 & D120 chart study',
+            'Extended Dashakoota matching',
+            'Long-term harmony & stability insights',
         ],
     },
     dosha: {
         t: 'Dosha Analysis',
-        s: 'Root Cause, Not Symptom',
-        d: 'Every dosh has a root — a specific planetary configuration in a specific house at a specific degree. We identify it precisely and design the exact remedy required, not a generic puja.',
+        s: 'Understanding The Cause Behind The Imbalance',
+        d: 'Every dosha reflects a specific planetary influence within the chart. We carefully study its placement, intensity, and actual effect before suggesting any remedy or ritual.',
         p: [
-            'Mangal, Kaal Sarp, Pitra identification',
-            'Severity grading per chart',
-            'Cancellation conditions checked',
-            'Precise ritual prescription',
+            'Mangal, Kaal Sarp & Pitra analysis',
+            'Severity assessment for each chart',
+            'Cancellation conditions examined',
+            'Personalised ritual recommendations',
         ],
     },
     muhurat: {
         t: 'Muhurat Selection',
-        s: 'The Timing of Destiny',
-        d: 'The moment a marriage begins sets its energetic foundation. We select muhurat using Panchang, Tithi, Nakshatra, and both charts — giving your marriage the most auspicious cosmic start possible.',
+        s: 'Choosing The Right Time To Begin',
+        d: 'In our traditions, the timing of a marriage has always held deep importance. We study Panchang, Tithi, Nakshatra, and both Kundalis carefully to identify the most supportive time for the ceremony to begin.',
         p: [
-            'Panchang-based calculation',
-            'Both charts aligned to same window',
-            'Multiple date options provided',
-            'Ceremony timing sequenced precisely',
+            'Panchang-based muhurat calculation',
+            'Alignment between both charts',
+            'Multiple suitable date options',
+            'Precise ceremony timing guidance',
         ],
     },
     karmic: {
         t: 'Karmic Reading',
-        s: 'Past Lives, Present Bonds',
-        d: 'Some marriages carry unresolved debt from previous lives. We identify karmic indicators — Rahu/Ketu placements, 7th house patterns, and Saturn influences — and resolve them before the ceremony.',
-        p: ['Rahu/Ketu axis analysis', '7th house & lord examination', 'Ancestral pattern identification', 'Karmic clearing ritual design'],
+        s: 'Understanding Deeper Relationship Patterns',
+        d: 'Some relationships carry emotions and patterns that feel difficult to explain. Through deeper chart study, we examine karmic influences connected to Rahu, Ketu, Saturn, and the 7th house to better understand the bond between two individuals.',
+        p: [
+            'Rahu/Ketu axis analysis',
+            '7th house & lord examination',
+            'Ancestral pattern insights',
+            'Personalised karmic remedies',
+        ],
     },
 };
 
@@ -57,11 +62,11 @@ export const KundaliSection = () => {
                         The Chart Science
                     </div>
                     <h2 className="mb-8 text-[clamp(1.9rem,3.6vw,3.2rem)] leading-[1.12] font-normal">
-                        Reading the{' '}
+                        Analysis{' '}
                         <em className="text-shadi-gold-light italic">
-                            Language
+                            Beyond
                             <br />
-                            of Destiny
+                            Stars
                         </em>
                     </h2>
 

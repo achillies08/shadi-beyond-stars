@@ -7,30 +7,23 @@ export const Philosophy = () => {
                         Our Philosophy
                     </div>
                     <h2 className="mb-5.5 text-[clamp(1.75rem,2.8vw,2.7rem)] leading-[1.2] font-normal">
-                        Not just a wedding service.
+                        More than a wedding service.
                         <br />
-                        <em className="text-shadi-gold-light italic">A karmic alignment</em>
+                        <em className="text-shadi-gold-light italic">Thoughtful guidance</em>
                         <br />
-                        for a lifelong partnership.
+                        for a lasting marriage.
                     </h2>
                     <p className="text-shadi-cream/55 mt-5.5 max-w-[600px] text-[1.05rem] leading-[1.9] font-light">
-                        Most people stop at matching numbers. We read the language of destiny — past karmic patterns, planetary debts, ancestral
-                        influences — and then design the precise rituals to bring everything into divine order before your marriage begins.
+                        Many people stop at basic horoscope matching. We look deeper into compatibility, emotional patterns, planetary influences, and the unseen factors that often shape a relationship over time. Through careful Kundali study and Vedic guidance, we help couples begin this journey with greater clarity, balance, and understanding.
                     </p>
                 </div>
-                <div className="reveal-stagger before:text-shadi-gold/4 before:font-devanagari relative overflow-hidden px-[5%] py-24 before:pointer-events-none before:absolute before:top-1/2 before:-right-4 before:-translate-y-1/2 before:text-[18rem] before:leading-none before:content-['ॐ']">
-                    {[
-                        { n: '12', l: 'Step Alignment Journey', d: 'From first inquiry to lifelong post-marriage guidance' },
-                        { n: '8+', l: 'Core Vedic Services', d: 'Each custom-designed per your birth chart' },
-                        { n: '3', l: 'Languages of Service', d: 'Hindi · English · Sanskrit' },
-                        { n: '∞', l: 'Commitment to Harmony', d: 'We travel locally, nationally, internationally', last: true },
-                    ].map((stat, i) => (
-                        <div key={i} className={`reveal-item ${stat.last ? '' : 'mb-10.5'}`}>
-                            <div className="text-shadi-gold-light mb-0.8 text-[3.4rem] leading-none">{stat.n}</div>
-                            <div className="text-shadi-cream/55 text-[0.6rem] tracking-[0.3em] uppercase">{stat.l}</div>
-                            <div className="text-shadi-cream/40 mt-1.4 text-[0.95rem] italic">{stat.d}</div>
-                        </div>
-                    ))}
+                <div className="reveal relative overflow-hidden h-full min-h-[400px]">
+                    <img 
+                        src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&h=1200" 
+                        alt="Indian Wedding Tradition" 
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-nightshade/80 to-transparent"></div>
                 </div>
             </div>
         </section>

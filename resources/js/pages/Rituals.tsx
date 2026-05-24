@@ -1,6 +1,5 @@
 import MainLayout from '@/layouts/MainLayout';
 import { Head, Link } from '@inertiajs/react';
-import React from 'react';
 
 export default function Rituals() {
     return (
@@ -8,20 +7,29 @@ export default function Rituals() {
             <Head title="Rituals — Shadi Beyond Stars" />
             <main>
                 {/* HERO */}
-                <section className="bg-gradient-to-br from-burgundy to-nightshade relative flex min-h-[90vh] items-center pt-24">
-                    <div className="mx-auto max-w-[1000px] px-[5%] text-center">
-                        <div className="text-shadi-gold mb-6 text-[0.62rem] uppercase tracking-[0.45em] before:mr-2 before:content-['✦']">Sacred Practices, Precise Purpose</div>
-                        <h1 className="font-goudy text-shadi-gold mb-4 text-[clamp(2.2rem,5vw,4.5rem)] font-bold tracking-[0.04em]">
-                            Every Ritual Has<br />a Purpose
+                <section className="from-burgundy/90 to-nightshade/90 relative flex min-h-[90vh] items-center bg-[url('/front-assets/wedding_havan.png')] bg-cover bg-center bg-no-repeat bg-blend-overlay pt-24">
+                    <div className="mx-auto max-w-[1000px] px-[5%] text-center relative z-10">
+                        <div className="text-shadi-gold mb-6 text-[0.62rem] tracking-[0.45em] uppercase before:mr-2 before:content-['✦'] drop-shadow-md">
+                            Every Ritual Has Meaning & Intention
+                        </div>
+                        <h1 className="font-goudy text-shadi-gold mb-4 text-[clamp(2.2rem,5vw,4.5rem)] font-bold tracking-[0.04em] drop-shadow-md">
+                            Every Ritual Has
+                            <br />a Purpose
                         </h1>
-                        <p className="text-shadi-cream/55 mx-auto mb-12 max-w-[600px] text-[1.15rem] leading-[1.8]">
-                            We don't perform generic ceremonies. Each ritual is designed from your Kundali to clear specific karmic blockages and align your marriage with the cosmos.
+                        <p className="text-shadi-cream/90 mx-auto mb-12 max-w-[600px] text-[1.15rem] leading-[1.8] drop-shadow-md">
+                            No ritual is performed without purpose. Each ceremony is chosen through careful Kundali study to address specific imbalances, relationship challenges, and planetary influences connected to the marriage.
                         </p>
                         <div className="flex flex-wrap justify-center gap-6">
-                            <button onClick={() => window.dispatchEvent(new Event('open-contact-modal'))} className="font-goudy text-nightshade hover:from-shadi-gold hover:to-shadi-gold-light inline-block cursor-pointer bg-gradient-to-br from-shadi-gold/80 to-shadi-gold px-8 py-[0.85rem] text-[0.62rem] font-semibold tracking-[0.2em] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(212,162,64,0.45)] border-none">
-                                Find Your Ritual
+                            <button
+                                onClick={() => window.dispatchEvent(new Event('open-contact-modal'))}
+                                className="font-goudy text-nightshade hover:bg-shadi-gold-light bg-shadi-gold inline-block cursor-pointer px-8 py-[0.85rem] text-[0.62rem] font-semibold tracking-[0.2em] uppercase transition-all duration-500"
+                            >
+                                Find The Right Ritual
                             </button>
-                            <a href="#rituals" className="font-goudy text-shadi-gold border-shadi-gold hover:bg-shadi-gold/10 hover:border-shadi-gold-light inline-block cursor-pointer border bg-transparent px-8 py-[0.8rem] text-[0.62rem] tracking-[0.2em] uppercase transition-all duration-300">
+                            <a
+                                href="#rituals"
+                                className="font-goudy text-shadi-gold border-shadi-gold hover:bg-shadi-gold/10 hover:border-shadi-gold-light inline-block cursor-pointer border bg-transparent px-8 py-[0.8rem] text-[0.62rem] tracking-[0.2em] uppercase transition-all duration-300 bg-nightshade/40"
+                            >
                                 Explore Rituals ↓
                             </a>
                         </div>
@@ -29,71 +37,105 @@ export default function Rituals() {
                 </section>
 
                 {/* INTRO SECTION */}
-                <section className="bg-nightshade mx-auto max-w-[1200px] px-[5%] py-16 md:py-24 text-center">
+                <section className="bg-nightshade mx-auto px-[5%] py-16 text-center md:py-24">
                     <div className="reveal">
-                        <div className="text-shadi-gold mb-5 flex items-center justify-center gap-4 text-[0.6rem] uppercase tracking-[0.4em] font-goudy before:h-[1px] before:w-[26px] before:bg-gradient-to-r before:from-shadi-gold/80 before:to-shadi-gold before:content-['']">
-                            Beyond Just Ceremony
+                        <div className="text-shadi-gold font-goudy before:bg-shadi-gold/60 mb-5 flex items-center justify-center gap-4 text-[0.6rem] tracking-[0.4em] uppercase before:h-[1px] before:w-[26px] before:content-['']">
+                            Find The Right Ritual
                         </div>
                         <h2 className="font-goudy text-shadi-gold mb-6 text-[clamp(1.6rem,3.5vw,3rem)] font-semibold tracking-[0.03em]">
-                            What Is a Ritual?
+                            The Meaning Behind <em className="font-garamond text-shadi-cream font-normal italic">Rituals</em>
                         </h2>
-                        <div className="bg-burgundy/80 border-shadi-gold/15 my-8 border p-6 md:p-12 leading-[1.9] text-left">
+                        <div className="bg-burgundy/80 border-shadi-gold/15 my-8 border p-6 text-left leading-[1.9] md:p-12">
                             <p className="text-shadi-cream/55 mb-4 text-[1.05rem]">
-                                A ritual is not superstition. It is a precise, scientifically-structured practice rooted in thousands of years of Vedic wisdom. When you perform a ritual with the correct intention, at the correct time, with the correct materials, you send a signal to the universe — and to your own subconscious — that you are committed to change.
+                                A ritual is not just a ceremony. It is a way of bringing balance where there is imbalance, clarity where there is confusion, and peace where there is unrest.
                             </p>
                             <p className="text-shadi-cream/55 mb-4 text-[1.05rem]">
-                                In Vedic tradition, rituals work on multiple levels: <strong className="text-shadi-cream">Karmic</strong> (helping settle and resolve karmic debts), <strong className="text-shadi-cream">Planetary</strong> (aligning your energy with planetary influences), <strong className="text-shadi-cream">Psychological</strong> (creating deep shifts in consciousness and intention), and <strong className="text-shadi-cream">Energetic</strong> (purifying and elevating the spiritual vibration of a space).
+                                In Vedic tradition, every ritual carries a purpose. The timing, mantras, materials, and process are chosen carefully according to the person's Kundali and the situation they are facing.
+                            </p>
+                            <p className="text-shadi-cream/55 mb-4 text-[1.05rem]">
+                                This is why we do not believe in standard rituals for everyone.
                             </p>
                             <p className="text-shadi-cream/55 text-[1.05rem]">
-                                This is why we don't offer "standard" rituals. A Mangal Dosh Puja for one person is different from another's because their Kundali is unique. We read what your stars need, and then we design the ritual to address exactly that.
+                                The same Mangal Dosh can affect two people differently. The same remedy may not work the same way for every marriage. We study the chart first, understand what truly needs attention, and only then recommend the right ritual.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 {/* SEVEN CORE RITUALS */}
-                <section id="rituals" className="bg-nightshade/80 mx-auto max-w-[1200px] px-[5%] py-16 md:py-24">
+                <section id="rituals" className="bg-nightshade/80 mx-auto px-[5%] py-16 md:py-24">
                     <div className="reveal">
-                        <div className="text-shadi-gold mb-5 flex items-center gap-4 text-[0.6rem] uppercase tracking-[0.4em] font-goudy before:h-[1px] before:w-[26px] before:bg-gradient-to-r before:from-shadi-gold/80 before:to-shadi-gold before:content-['']">
+                        <div className="text-shadi-gold font-goudy before:bg-shadi-gold/60 mb-5 flex items-center gap-4 text-[0.6rem] tracking-[0.4em] uppercase before:h-[1px] before:w-[26px] before:content-['']">
                             Our Ritual Practice
                         </div>
                         <h2 className="font-goudy text-shadi-gold mb-6 text-[clamp(1.6rem,3.5vw,3rem)] font-semibold tracking-[0.03em]">
                             Seven <em className="font-garamond text-shadi-cream font-normal italic">Core Rituals</em> We Perform
                         </h2>
                         <p className="text-shadi-cream/55 mb-8 max-w-[600px] text-[1.05rem] leading-[1.9]">
-                            Here are the seven core rituals we've mastered over years of work. Each can be customised based on your specific Kundali needs.
+                            Each ritual is selected and customised according to the individual's Kundali, planetary influences, and the needs of the marriage journey.
                         </p>
 
                         <div className="bg-shadi-gold/5 mt-8 grid grid-cols-1 gap-[2px] md:grid-cols-2">
                             {[
-                                { num: '01', title: 'Mangal Dosh Puja', problem: 'Neutralising the influence of Mars', impact: 'When Mars is positioned in certain houses, it can bring conflict into a marriage. This targeted ceremony reduces that aggressive influence and brings stability to your relationship.', duration: '3–5 hours', cost: '₹8,000–₹15,000', location: 'Home / Temple' },
-                                { num: '02', title: 'Kaal Sarp Dosh Puja', problem: 'Breaking the karmic cycle of Rahu and Ketu', impact: 'One of the most significant karmic blockages. This ritual performs specific yagnas to dissolve the serpentine energy and release ancestral debts.', duration: '4–6 hours', cost: '₹12,000–₹25,000', location: 'Temple Preferred' },
-                                { num: '03', title: 'Navgrah Shanti Puja', problem: 'Bringing all nine planets into harmony', impact: 'All nine planetary deities are individually propitiated. Creates a harmonious cosmic environment for the marriage to begin.', duration: '5–7 hours', cost: '₹10,000–₹18,000', location: 'Home / Temple' },
-                                { num: '04', title: 'Vivah Sanskar', problem: 'The wedding ceremony, built from your charts', impact: 'The complete Vedic wedding ceremony, customised from your birth charts. Every mantra and offering is sequenced for spiritual impact.', duration: '4–8 hours', cost: '₹35,000–₹75,000', location: 'Your Venue' },
-                                { num: '05', title: 'Pitra Dosh Puja', problem: 'Addressing ancestral karmic debt', impact: 'Unresolved ancestral karma can burden a marriage. This ritual performs correct ancestral rites so your union begins without inherited burdens.', duration: '3–4 hours', cost: '₹6,000–₹12,000', location: 'Temple / Home' },
-                                { num: '06', title: 'Grah Shanti Puja', problem: 'Removing obstacles before the wedding', impact: 'Performed weeks before your wedding, this clearing dissolves planetary obstacles that could create delays or disruptions.', duration: '2–4 hours', cost: '₹5,000–₹10,000', location: '2–4 weeks before', labelLocation: 'Timing' },
-                                { num: '07', title: 'Post-Marriage Remedies', problem: 'Long-term spiritual harmony', impact: 'Marriage is lifelong. We provide ongoing guidance aligned to planetary movements, periodic check-ins, and updated remedies for enduring harmony.', duration: 'Variable', cost: '₹2,000–₹5,000', location: 'Ongoing', labelLocation: 'Frequency' }
+                                {
+                                    num: '01',
+                                    title: 'Mangal Dosh Puja',
+                                    problem: 'Balancing The Influence Of Mars',
+                                    impact: 'Performed to reduce conflict, instability, and imbalance caused by strong Mars influence within marriage-related houses.'
+                                },
+                                {
+                                    num: '02',
+                                    title: 'Kaal Sarp Dosh Puja',
+                                    problem: 'Addressing Rahu & Ketu Imbalance',
+                                    impact: 'A ritual performed in specific planetary conditions where Rahu and Ketu create recurring obstacles, emotional heaviness, or delays in life and marriage.'
+                                },
+                                {
+                                    num: '03',
+                                    title: 'Navgrah Shanti Puja',
+                                    problem: 'Bringing Planetary Energies Into Harmony',
+                                    impact: 'A traditional ritual dedicated to balancing the influence of all nine planets before an important new beginning.'
+                                },
+                                {
+                                    num: '04',
+                                    title: 'Vivah Sanskar',
+                                    problem: 'A Wedding Ceremony Guided By Your Kundali',
+                                    impact: 'A complete Vedic wedding ceremony thoughtfully personalised according to the couple\'s birth charts, muhurat, and family traditions.'
+                                },
+                                {
+                                    num: '05',
+                                    title: 'Pitra Dosh Puja',
+                                    problem: 'Healing Ancestral Imbalance',
+                                    impact: 'Performed in situations where ancestral patterns or unresolved family karmas may be affecting harmony in marriage and relationships.'
+                                },
+                                {
+                                    num: '06',
+                                    title: 'Grah Shanti Puja',
+                                    problem: 'Removing Obstacles Before Marriage',
+                                    impact: 'A calming and balancing ritual performed before the wedding to reduce planetary disturbances and create a peaceful beginning.'
+                                },
+                                {
+                                    num: '07',
+                                    title: 'Post-Marriage Remedies',
+                                    problem: 'Guidance For Long-Term Harmony',
+                                    impact: 'Continued remedies and spiritual guidance to help couples navigate different phases of married life with greater balance and understanding.'
+                                },
                             ].map((ritual, idx) => (
-                                <div key={idx} className="bg-nightshade hover:bg-burgundy/80 group relative overflow-hidden p-6 md:p-10 transition-all duration-300">
-                                    <div className="font-goudy text-shadi-gold/80 mb-2 text-[0.52rem] uppercase tracking-[0.2em] opacity-70">{ritual.num}</div>
-                                    <div className="font-goudy text-shadi-gold mb-4 mt-4 text-[1.1rem] font-semibold">{ritual.title}</div>
-                                    <div className="text-shadi-cream/35 border-shadi-gold/10 mb-4 border-b pb-4 text-[0.95rem] italic">{ritual.problem}</div>
-                                    <div className="text-shadi-cream/55 mb-6 text-[0.92rem] leading-[1.7]">{ritual.impact}</div>
-                                    <div className="text-shadi-gold/80 flex flex-wrap gap-6 text-[0.52rem] uppercase tracking-[0.12em] font-goudy">
-                                        <div className="flex-1">
-                                            <div className="text-shadi-gold/60 opacity-80">Duration</div>
-                                            <div className="font-garamond text-shadi-cream mt-1 block text-[0.85rem] normal-case tracking-normal">{ritual.duration}</div>
-                                        </div>
-                                        <div className="flex-1">
-                                            <div className="text-shadi-gold/60 opacity-80">Cost</div>
-                                            <div className="font-garamond text-shadi-cream mt-1 block text-[0.85rem] normal-case tracking-normal">{ritual.cost}</div>
-                                        </div>
-                                        <div className="flex-1">
-                                            <div className="text-shadi-gold/60 opacity-80">{ritual.labelLocation || 'Location'}</div>
-                                            <div className="font-garamond text-shadi-cream mt-1 block text-[0.85rem] normal-case tracking-normal">{ritual.location}</div>
-                                        </div>
+                                <div
+                                    key={idx}
+                                    className="bg-nightshade hover:bg-burgundy/80 group relative overflow-hidden p-6 transition-all duration-300 md:p-10"
+                                >
+                                    <div className="font-goudy text-shadi-gold/80 mb-2 text-[0.52rem] tracking-[0.2em] uppercase opacity-70">
+                                        {ritual.num}
                                     </div>
-                                    <button onClick={() => window.dispatchEvent(new Event('open-contact-modal'))} className="font-goudy text-shadi-gold mt-6 flex items-center gap-2 text-[0.55rem] uppercase tracking-[0.15em] opacity-0 transition-opacity duration-300 group-hover:cursor-pointer group-hover:opacity-100 after:text-[0.7rem] after:content-['→'] border-none bg-transparent p-0">
+                                    <div className="font-goudy text-shadi-gold mt-4 mb-4 text-[1.1rem] font-semibold">{ritual.title}</div>
+                                    <div className="text-shadi-cream/35 border-shadi-gold/10 mb-4 border-b pb-4 text-[0.95rem] italic">
+                                        {ritual.problem}
+                                    </div>
+                                    <div className="text-shadi-cream/55 mb-6 text-[0.92rem] leading-[1.7]">{ritual.impact}</div>
+                                    <button
+                                        onClick={() => window.dispatchEvent(new Event('open-contact-modal'))}
+                                        className="font-goudy text-shadi-gold mt-6 flex items-center gap-2 border-none bg-transparent p-0 text-[0.55rem] tracking-[0.15em] uppercase opacity-0 transition-opacity duration-300 group-hover:cursor-pointer group-hover:opacity-100 after:text-[0.7rem] after:content-['→']"
+                                    >
                                         Learn more
                                     </button>
                                 </div>
@@ -103,48 +145,56 @@ export default function Rituals() {
                 </section>
 
                 {/* WHY RITUAL MATTERS */}
-                <section className="bg-burgundy/60 mx-auto max-w-[1200px] px-[5%] py-16 md:py-24">
+                <section className="bg-burgundy/60 mx-auto px-[5%] py-16 md:py-24">
                     <div className="reveal">
-                        <div className="text-shadi-gold mb-5 flex items-center gap-4 text-[0.6rem] uppercase tracking-[0.4em] font-goudy before:h-[1px] before:w-[26px] before:bg-gradient-to-r before:from-shadi-gold/80 before:to-shadi-gold before:content-['']">
+                        <div className="text-shadi-gold font-goudy before:bg-shadi-gold/60 mb-5 flex items-center gap-4 text-[0.6rem] tracking-[0.4em] uppercase before:h-[1px] before:w-[26px] before:content-['']">
                             The Science & Soul of Ritual
                         </div>
                         <h2 className="font-goudy text-shadi-gold mb-6 text-[clamp(1.6rem,3.5vw,3rem)] font-semibold tracking-[0.03em]">
-                            Why Ritual <em className="font-garamond text-shadi-cream font-normal italic">Matters</em>
+                            Why Rituals <em className="font-garamond text-shadi-cream font-normal italic">Matter</em>
                         </h2>
-                        <div className="bg-burgundy/80 border-shadi-gold/15 my-8 border p-6 md:p-12 leading-[1.9]">
+                        <div className="bg-burgundy/80 border-shadi-gold/15 my-8 border p-6 leading-[1.9] md:p-12">
                             <p className="text-shadi-cream/55 mb-4 text-[1.05rem]">
-                                <strong className="text-shadi-cream font-semibold">The Power of Intention:</strong> When you perform a ritual with conscious intention, you create a psychological and energetic shift. Research shows rituals reduce anxiety, increase confidence, and create real behavioral change.
+                                <strong className="text-shadi-cream font-semibold">Intention Creates Direction:</strong> A ritual is not performed mechanically. When done with awareness and sincerity, it helps bring clarity, emotional grounding, and a stronger sense of intention into an important phase of life.
                             </p>
                             <p className="text-shadi-cream/55 mb-4 text-[1.05rem]">
-                                <strong className="text-shadi-cream font-semibold">The Vedic Science:</strong> Vedic rituals are based on thousands of years of observation. The timing, materials, mantras, and process are all scientifically structured to create specific outcomes.
+                                <strong className="text-shadi-cream font-semibold">Rooted In Vedic Tradition:</strong> Vedic rituals are built on generations of observation and understanding. The timing, mantras, materials, and process all hold significance within the practice.
                             </p>
                             <p className="text-shadi-cream/55 mb-4 text-[1.05rem]">
-                                <strong className="text-shadi-cream font-semibold">The Planetary Connection:</strong> Your birth chart is a cosmic fingerprint. Rituals "update" your energetic signature to align with more auspicious planetary influences. They don't change your fate — they optimize your response to it.
+                                <strong className="text-shadi-cream font-semibold">Connected To Your Kundali:</strong> Every birth chart carries different planetary influences and patterns. Rituals are chosen according to what your Kundali genuinely indicates, not through fixed formulas.
                             </p>
                             <p className="text-shadi-cream/55 mb-4 text-[1.05rem]">
-                                <strong className="text-shadi-cream font-semibold">The Transformational Shift:</strong> People who perform rituals with our guidance report increased confidence, reduced anxiety, better communication, and faster conflict resolution.
+                                <strong className="text-shadi-cream font-semibold">Creating Space For Harmony:</strong> Many people experience greater emotional clarity, calmness, understanding, and balance in relationships after performing the right rituals with proper guidance.
                             </p>
                             <p className="text-shadi-cream/55 text-[1.05rem]">
-                                <strong className="text-shadi-cream font-semibold">The Ritual Doesn't Do the Work — You Do:</strong> Rituals are a tool, not a magic fix. They create an optimal environment for you to build a healthy marriage. The discipline, intention, and commitment you bring is what makes it powerful.
+                                <strong className="text-shadi-cream font-semibold">Rituals Support The Journey:</strong> A ritual is not a shortcut or instant solution. It is a way of creating the right foundation, intention, and spiritual environment for a healthier marriage and relationship.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 {/* CTA SECTION */}
-                <section className="from-nightshade to-burgundy border-shadi-gold/15 border-y bg-gradient-to-br px-[5%] py-20 text-center">
+                <section className="bg-nightshade border-shadi-gold/15 border-y px-[5%] py-20 text-center">
                     <div className="reveal mx-auto max-w-[700px]">
                         <h2 className="font-goudy text-shadi-gold mb-2 text-[clamp(1.6rem,3vw,2.8rem)] font-semibold tracking-[0.04em]">
-                            Which Ritual Is Right<br />for <em className="font-garamond text-shadi-cream font-normal italic">You?</em>
+                            Which Ritual Is Right
+                            <br />
+                            For <em className="font-garamond text-shadi-cream font-normal italic">Your Journey?</em>
                         </h2>
                         <p className="text-shadi-cream/55 mb-10 text-[1.05rem] leading-[1.8]">
-                            Let's identify which rituals your Kundali needs. Every ritual is customised — we design the ceremony specifically for your karmic needs and your marriage's highest good.
+                            Every Kundali carries different needs. We help you understand which rituals are truly relevant for your relationship and marriage journey.
                         </p>
                         <div className="flex flex-wrap justify-center gap-6">
-                            <button onClick={() => window.dispatchEvent(new Event('open-contact-modal'))} className="font-goudy text-nightshade hover:from-shadi-gold hover:to-shadi-gold-light inline-block cursor-pointer bg-gradient-to-br from-shadi-gold/80 to-shadi-gold px-8 py-[0.85rem] text-[0.62rem] font-semibold tracking-[0.2em] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(212,162,64,0.45)] border-none">
+                            <button
+                                onClick={() => window.dispatchEvent(new Event('open-contact-modal'))}
+                                className="font-goudy text-nightshade hover:bg-shadi-gold-light bg-shadi-gold inline-block cursor-pointer px-8 py-[0.85rem] text-[0.62rem] font-semibold tracking-[0.2em] uppercase transition-all duration-500"
+                            >
                                 Get Your Ritual Analysis
                             </button>
-                            <Link href="/services" className="font-goudy text-shadi-gold border-shadi-gold hover:bg-shadi-gold/10 hover:border-shadi-gold-light inline-block cursor-pointer border bg-transparent px-8 py-[0.8rem] text-[0.62rem] tracking-[0.2em] uppercase transition-all duration-300">
+                            <Link
+                                href="/services"
+                                className="font-goudy text-shadi-gold border-shadi-gold hover:bg-shadi-gold/10 hover:border-shadi-gold-light inline-block cursor-pointer border bg-transparent px-8 py-[0.8rem] text-[0.62rem] tracking-[0.2em] uppercase transition-all duration-300"
+                            >
                                 View All Services
                             </Link>
                         </div>

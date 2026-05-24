@@ -79,7 +79,7 @@ export const ContactForm = ({ buttonText = "Request Analysis →", onSuccess }: 
             </div>
             
             <div className="mt-8">
-                <button type="submit" className="font-goudy text-nightshade hover:from-shadi-gold hover:to-shadi-gold-light w-full cursor-pointer bg-gradient-to-br from-shadi-gold/80 to-shadi-gold p-[0.9rem] text-[0.62rem] font-semibold tracking-[0.2em] uppercase transition-all duration-300 hover:-translate-y-0.5">
+                <button type="submit" className="font-goudy text-nightshade hover:bg-shadi-gold-light w-full cursor-pointer bg-shadi-gold p-[0.9rem] text-[0.62rem] font-semibold tracking-[0.2em] uppercase transition-all duration-500">
                     {buttonText}
                 </button>
                 <div className="font-garamond text-shadi-gold/70 mt-4 text-center text-[0.8rem] italic">
